@@ -1,8 +1,8 @@
-import React from "react";
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Navigate } from "react-router-dom";
 import Home from "./pages/Home";
-
+import ComplianceDashboard from "./pages/ComplianceDashboard";
 import AnalyticsPage from "./pages/CoreFeatures/analytics/AnalyticsDashboard";
 import './styles/global.css';
 import EmailListManager from "./pages/CoreFeatures/emails/EmailListManager";
@@ -23,6 +23,7 @@ const App = () => {
         <Route path="/home" element={<Home />} />
         <Route path="/template-insights" element={<TemplateInsights />} />
         <Route path="/dashboard/analytics" element={<AnalyticsPage />} />
+        <Route path="/dashboard/compilance" element={<ComplianceDashboard />} />
         <Route path="/dashboard/campaign" element={<CampaignAutomation />} />
         <Route path="/dashboard/addfile" element={<BulkUpload/>} />
         <Route path="/dashboard/emails" element={<EmailListManager/>} />
